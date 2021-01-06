@@ -66,7 +66,7 @@ class InsurancePoolNew extends Component {
           </Form.Field>
 
           <Form.Field>
-            <label> Document Hashes (will be automated in next upgrade)</label>
+            <label> Document Hashes (For now paste in the hash from the external ipfs system)</label>
             <Input
               label="Hash"
               labelPosition="right"
