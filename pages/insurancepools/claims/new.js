@@ -60,7 +60,7 @@ class ClaimNew extends Component {
         <br/>
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
           <Form.Field>
-            <label>Description(for now include inside bracket the external ipfs hashes)</label>
+            <label>Description(for now include inside bracket the external IPFS hashes)</label>
             <Input
               value={this.state.description}
               onChange={event =>
