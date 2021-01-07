@@ -9,8 +9,8 @@ fs.removeSync(buildPath); // remove the build folder , so that content inside it
 const insurancePoolPath = path.resolve(__dirname, 'contracts', 'InsurancePool.sol');
 const source = fs.readFileSync(insurancePoolPath, 'utf8' );
 const verifierPoolPath = path.resolve(__dirname, 'contracts', 'VerifierPool.sol');
-const source = fs.readFileSync(verifierPoolPath, 'utf8' );
-const output = solc.compile(source, 2).contracts; // there is only one source in this case one contracts
+const source2 = fs.readFileSync(verifierPoolPath, 'utf8' );
+const output2 = solc.compile(source, 2).contracts; // there is only one source in this case one contracts
 
 // now we recreate the build folder
 fs.ensureDirSync(buildPath);
