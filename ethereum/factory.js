@@ -1,5 +1,6 @@
 import web3 from './web3'; // we are getting the instance from web3.js not the constructor
 import InsurancePoolFactory from  './build/InsurancePoolFactory.json';
+import VerifierPoolFactory from  './build/VerifierPoolFactory.json';
 const fs = require('fs');
 //const deployedTo = fs.readFileSync(".deployedTo").toString().trim();
 
@@ -21,6 +22,10 @@ const instance = new web3.eth.Contract(
   //'0x82bF4BA376837189f6959872d7E0B62e3faC57dd' // this is my deloyed address replace this
   // with urs, else u will just be running my deployed contract :P
   // i have keep the previous contract address here so that u can referecne, or i can ref
+);
+
+const instance = new web3.eth.Contract(
+  JSON.parse(VerifierPoolFactory.interface),
 );
 
 export default instance;
