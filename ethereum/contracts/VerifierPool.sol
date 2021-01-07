@@ -46,7 +46,7 @@ contract VerifierPool {
     }
 
     modifier stakeRestricted() {
-        require(verifers[msg.sender]);
+        require(verifiers[msg.sender]);
         _;
     }
 
