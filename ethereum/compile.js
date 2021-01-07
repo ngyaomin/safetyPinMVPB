@@ -11,13 +11,20 @@ const source = fs.readFileSync(insurancePoolPath, 'utf8' );
 const verifierPoolPath = path.resolve(__dirname, 'contracts', 'VerifierPool.sol');
 const source2 = fs.readFileSync(verifierPoolPath, 'utf8' );
 const output = solc.compile(source, 1).contracts; // there is only one source in this case one contracts
-const output2 = solc.compile(source, 1).contracts;
+const output2 = solc.compile(source2, 1).contracts;
 // now we recreate the build folder
 fs.ensureDirSync(buildPath);
 
 for (let contract in output) {
   fs.outputJsonSync(
     path.resolve(buildPath, contract.replace(':', '') + '.json'),
-    output[contract], output2[contract]
+    output[contract]
+  );
+}
+
+for (let contract2 in output) {
+  fs.outputJsonSync(
+    path.resolve(buildPath, contract2.replace(':', '') + '.json'),
+    output2[contract2]
   );
 }
