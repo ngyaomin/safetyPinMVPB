@@ -6,9 +6,9 @@ const buildPath = path.resolve(__dirname, 'build');
 fs.removeSync(buildPath); // remove the build folder , so that content inside it only run once
 // ie we delete it and then run our own contents below
 
-const insurancePoolPath = path.resolve(__dirname, 'contracts', 'InsurancePool.sol');
+const insurancePoolPath = path.resolve(__dirname, 'contracts', 'InsurancePool.sol', 'VerifierPool.sol');
 const source = fs.readFileSync(insurancePoolPath, 'utf8' );
-const output = solc.compile(source, 1).contracts; // there is only one source in this case one contracts
+const output = solc.compile(source, 2).contracts; // there is only one source in this case one contracts
 
 // now we recreate the build folder
 fs.ensureDirSync(buildPath);
