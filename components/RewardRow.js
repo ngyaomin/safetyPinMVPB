@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table, Button } from 'semantic-ui-react';
 import web3 from '../ethereum/web3';
-import VerifierPool from '../ethereum/insurancePool';
+import VerifierPool from '../ethereum/verifierPool';
 
 class RewardRow extends Component {
   onApprove = async () => {

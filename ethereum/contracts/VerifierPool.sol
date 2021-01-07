@@ -68,7 +68,7 @@ contract VerifierPool {
         documentHash = document;
     }
 
-    function fund() public fundRestricted stoppedInEmergency payable {
+    function stake() public fundRestricted stoppedInEmergency payable {
         verifiers[msg.sender] = true;
         verifiersCount++;
     }
