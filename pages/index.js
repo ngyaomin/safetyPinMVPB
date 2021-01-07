@@ -14,6 +14,10 @@ class InsurancePoolIndex extends Component {
     const insurancePools = await factory.methods.getDeployedInsurancePools().call();
 
     return { insurancePools: insurancePools };
+
+    const verifierPools = await factory.methods.getDeployedVerifierPools().call();
+
+    return { verifierPools: verifierPools };
   }
 
   renderInsurancePools() {
@@ -40,6 +44,29 @@ class InsurancePoolIndex extends Component {
       return <Card.Group items={items} />;
   }
 
+  renderVerifierPools() {
+      const items = this.props.verifierPools.map(address => {
+        return {
+          header: address,
+          description: (
+            <div>
+            <i class="hand point right outline icon"></i>
+              <Link route={`/verifierpools/${address}`}>
+                <a><b><mark>View this Pool</mark></b></a>
+              </Link>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="ethereum icon"></i>
+              <Link route={`https://rinkeby.etherscan.io/address/${address}`}>
+                <a target="_blank">View in Etherscan</a>
+              </Link>
+            </div>
+        ),
+          fluid: true
+        };
+      });
+
+      return <Card.Group items={items} />;
+  }
 
   render() {
     return (
