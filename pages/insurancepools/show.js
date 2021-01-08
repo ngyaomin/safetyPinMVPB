@@ -62,11 +62,16 @@ class InsurancePoolShow extends Component {
         meta: 'Safety Pin Pool Balance(ether)',
         description: 'How much fund this pool has left'
       },
+
+      //`https://ipfs.infura.io/ipfs/${this.state.safetyPinHash}`
+      //<Link route={`/insurancepools/${this.props.address}/claims`}>
       {
         header: documentHash,
-        meta: 'Document Hash',
-        description: 'Hash of Uploaded Documents',
-        style: { overflowWrap: 'break-word' }
+        meta: 'Hash of IPFS of Document',
+        description: 'Click to View/Download' ,
+        href : `https://ipfs.infura.io/ipfs/${documentHash}`,
+        style: { overflowWrap: 'break-word' },
+        target: "_blank"
       }
     ];
 
