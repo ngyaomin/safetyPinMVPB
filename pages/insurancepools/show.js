@@ -34,12 +34,14 @@ class InsurancePoolShow extends Component {
     } = this.props;
 
     const items = [
-
+//`https://rinkeby.etherscan.io/address/${address}`
       {
         header: manager,
         meta: 'Address of manager',
+        href: `https://rinkeby.etherscan.io/address/${manager}`,
         description: 'Manager create this pool and can create claims on behalf of',
-        style: { overflowWrap: 'break-word' }
+        style: { overflowWrap: 'break-word' },
+        target: "_blank"
       }
       ,
       {
@@ -63,8 +65,6 @@ class InsurancePoolShow extends Component {
         description: 'How much fund this pool has left'
       },
 
-      //`https://ipfs.infura.io/ipfs/${this.state.safetyPinHash}`
-      //<Link route={`/insurancepools/${this.props.address}/claims`}>
       {
         header: documentHash,
         meta: 'Hash of IPFS of Document',
