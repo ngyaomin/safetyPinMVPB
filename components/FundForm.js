@@ -37,6 +37,7 @@ class FundForm extends Component {
       <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
         <Form.Field>
           <label>Premium to Join</label>
+          <label>Pls note : The More you stake will allow you to earn more returns from our future liquidity pools but does not increase your voting power</label>
           <Input
             value={this.state.value}
             onChange={event => this.setState({ value: event.target.value })}

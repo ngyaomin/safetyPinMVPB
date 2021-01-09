@@ -47,7 +47,7 @@ class InsurancePoolShow extends Component {
       {
         header: minimumPremium,
         meta: 'Minimum Premium in weis',
-        description: 'To ensure peace of mind you must contribute at least this much wei, also to become validator'
+        description: `To ensure peace of mind you must contribute at least this much wei, also to become validator. This is ${web3.utils.fromWei(minimumPremium, 'ether')} in ethers`
       },
       {
         header: claimsCount,
