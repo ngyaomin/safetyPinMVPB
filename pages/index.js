@@ -4,6 +4,7 @@ import { Card, Button } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import { Link } from '../routes';
 import MoveStuffAround from './ticker';
+import deployedTo from '../ethereum/deployedTo'
 
 
 class InsurancePoolIndex extends Component {
@@ -53,11 +54,15 @@ class InsurancePoolIndex extends Component {
             <u>givemeyourmoney@cheatyourmoney.io</u>
           </a>
           <br/ >
+
           You can also see our latest smart contract
           <br/ >
-          <a target="_blank" href="https://rinkeby.etherscan.io/address/0xb237d488Da554ffadA191038c31A8d585d2aa1F1">
-          '0xb237d488Da554ffadA191038c31A8d585d2aa1F1'
-          </a>
+          <Link route = {`https://rinkeby.etherscan.io/address/${deployedTo}`}>
+            <a target="_blank">
+              '${deployedTo}'
+            </a>
+          </Link>
+
         </h7>
           <h3>Open Safety Pins Pools</h3>
 
