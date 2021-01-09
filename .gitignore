@@ -1,2 +1,4 @@
 .env
 .deployedTo
+/node_modules
+.next
