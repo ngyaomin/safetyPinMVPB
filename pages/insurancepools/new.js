@@ -6,6 +6,7 @@ import web3 from '../../ethereum/web3';
 import  { Router } from '../../routes'; // link not use now, maybe use later, i lazy so put here
 import Uploady from "@rpldy/uploady";
 import UploadButton from  "@rpldy/upload-button";
+import { Link } from '../../routes';
 
 class InsurancePoolNew extends Component {
   state = {
@@ -49,9 +50,16 @@ class InsurancePoolNew extends Component {
 
         <h3>Create a new insurance pool offer</h3>
 
-        <Uploady destination={{url: "https://drive.google.com/drive/folders/1cBBWggk_W6qbHvdNs8hBxPlNXqdURJFq?usp=sharing"}}>
-          <UploadButton/> Upload Supporting Files Here (for demo only real upload server cant afford )
-        </Uploady>
+          <Uploady destination={{url: "https://drive.google.com/drive/folders/1cBBWggk_W6qbHvdNs8hBxPlNXqdURJFq?usp=sharing"}}>
+
+            <UploadButton/>
+            <Link route={'http://localhost:3001/'}>
+              <a target="_blank">
+                &nbsp; Upload Supporting Files Here (for demo only real upload server cant afford, click here for external IPFS )
+              </a>
+            </Link>
+          </Uploady>
+
         <br/><br/>
 
         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>

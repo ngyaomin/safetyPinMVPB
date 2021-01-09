@@ -54,7 +54,12 @@ class ClaimNew extends Component {
         </Link>
         <h3>Create a new claim request</h3>
         <Uploady destination={{url: "https://fakeuploaddrive.fake"}}>
-          <UploadButton/> Upload Supporting Files Here (for demo only real upload server cant afford )
+          <UploadButton/>
+          <Link route={'http://localhost:3001/'}>
+            <a target="_blank">
+              &nbsp; Upload Supporting Files Here (for demo only real upload server cant afford, click here for external IPFS )
+            </a>
+          </Link>
         </Uploady>
         <br/>
         <br/>
