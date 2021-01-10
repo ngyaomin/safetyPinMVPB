@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@chainlink/contracts": "0.0.12",
     "@rpldy/upload-button": "^0.8.2",
     "@rpldy/uploady": "^0.8.2",
     "bignumber.js": "^9.0.1",

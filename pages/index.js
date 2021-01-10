@@ -4,8 +4,9 @@ import { Card, Button } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import { Link } from '../routes';
 import MoveStuffAround from './ticker';
-import deployedTo from '../ethereum/deployedTo'
-
+import deployedTo from '../ethereum/deployedTo';
+//import ethereumPrice from './ethereumPrice';
+//import Web3 from 'web3';
 
 class InsurancePoolIndex extends Component {
   // creating a instance of class to get access to
@@ -47,6 +48,7 @@ class InsurancePoolIndex extends Component {
 
       <Layout>
       <MoveStuffAround/>
+
         <div>
         <h7>We are not rasing any money, we are only accepting donations.
           <br/ > For more info email &nbsp;
@@ -64,6 +66,8 @@ class InsurancePoolIndex extends Component {
           </Link>
 
         </h7>
+
+
           <h3>Open Safety Pins Pools</h3>
 
           <Link route="/insurancepools/new">
@@ -78,6 +82,7 @@ class InsurancePoolIndex extends Component {
           </Link>
           {this.renderInsurancePools()}
         </div>
+
       </Layout>
     );
   }
