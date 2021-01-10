@@ -81,6 +81,7 @@ class InsurancePoolIndex extends Component {
             </a>
           </Link>
           {this.renderInsurancePools()}
+          <br/><br/><br/>
         </div>
 
       </Layout>

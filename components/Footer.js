@@ -9,7 +9,8 @@ var style = {
     left: "0",
     bottom: "50px",
     height: "0px",
-    width: "100%"
+    width: "100%",
+    marginTop: "100px"
 }
 
 export default class ThisComponent extends Component {
