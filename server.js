@@ -27,3 +27,5 @@ app.prepare().then(() => {
     console.log('Ready  on localhost 3000');
   });
 });
+
+app.use(express.static(path.resolve('client', 'build')));
