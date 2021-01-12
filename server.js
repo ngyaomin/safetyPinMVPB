@@ -30,4 +30,4 @@ app.prepare().then(() => {
   });
 });
 
-app.use(express.static(path.resolve('client', 'build')));
+//app.use(express.static(path.resolve('client', 'build')));
