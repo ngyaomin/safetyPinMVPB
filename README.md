@@ -1,5 +1,6 @@
 # DCInsurance1n2
 //SPDX-License-Identifier: UNLICENSED
+<br/> the test is in a differnt settings vs the demo, thus running the test will fail as the project is design for the demo, ie the specification is different
 <br/>  use truffle 4. truffle 5 and above have too many conflict issues. The bug will be solve in truffle version 8 hopefully. 7 have not yet solve the issue.
 <br/>  to install truffle 4, run npm uninstall -g truffle.
 <br/>  then npm install -g truffle v4.0.7.

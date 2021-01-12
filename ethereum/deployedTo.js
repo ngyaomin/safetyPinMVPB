@@ -1,8 +1,9 @@
-const deployedTo = '0x8E17Fa864cB4A2DF190c4C13Ba48424162dFE2e6'
+const deployedTo = '0x4Cc694bc285935b91B2F49a69124513D42ed1B27'
 
- export default deployedTo;
+export default deployedTo;
 
 
+// 0x8E17Fa864cB4A2DF190c4C13Ba48424162dFE2e6 <<< fallback
 
  // '0x8E17Fa864cB4A2DF190c4C13Ba48424162dFE2e6'
  // '0xB16fC8C80eD3b91D841c394E881BCC4943775808'

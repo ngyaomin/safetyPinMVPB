@@ -23,10 +23,10 @@ beforeEach(async () => {
     gas: '1000000'
   });
 
-  // const addresses = await factory.methods.getDeployedInsurancePools().call();
-  // insurancePoolAddress = addresses[0]
+  const addresses = await factory.methods.getDeployedInsurancePools().call();
+    insurancePoolAddress = addresses[0]
 
-  [insurancePoolAddress] = await factory.methods.getDeployedInsurancePools().call();
+    [insurancePoolAddress] = await factory.methods.getDeployedInsurancePools().call();
 
   insurancePool = await new web3.eth.Contract(
     JSON.parse(compiledInsurancePool.interface),
