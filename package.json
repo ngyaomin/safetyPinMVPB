@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/ngyaomin/safetyPinMVPB"
   "name": "distributedinsurance",
   "version": "1.0.0",
   "description": "",
@@ -6,7 +7,9 @@
   "scripts": {
     "test": "mocha",
     "dev": "node server.js",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -35,5 +38,8 @@
     "tls": "0.0.1",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.0.0-beta.26"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
