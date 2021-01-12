@@ -43,7 +43,7 @@ export default class ThisComponent extends Component {
               </Link>
             </Menu.Menu>
             <Menu.Menu position="left">
-              <Link route="https://ipfs.infura.io/ipfs/QmPjkaAcAp3Hy7YBAkqgEWzcCLxFKePYJVaHHkuqeaT9bi">
+              <Link route="https://ipfs.infura.io/ipfs/QmRy77eyfhvkLL5pK8fG697angnGJvKNA3eZhHu7HREML6">
                 <a className="item" target="_blank">
                   <i class="download icon"></i>
                   Download PowerPoint Presentation on IPFS

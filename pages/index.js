@@ -5,10 +5,11 @@ import Layout from '../components/Layout';
 import { Link } from '../routes';
 import MoveStuffAround from './ticker';
 import deployedTo from '../ethereum/deployedTo';
-//import ethereumPrice from './ethereumPrice';
-//import Web3 from 'web3';
+import ethereumPrice from './ethereumPrice';
+
 
 class InsurancePoolIndex extends Component {
+
   // creating a instance of class to get access to
   // static asign the function not to instance of the class but to class itself
 
@@ -17,6 +18,7 @@ class InsurancePoolIndex extends Component {
 
     return { insurancePools: insurancePools };
   }
+
 
   renderInsurancePools() {
       const items = this.props.insurancePools.map(address => {
@@ -44,9 +46,18 @@ class InsurancePoolIndex extends Component {
 
 
   render() {
+
     return (
 
       <Layout>
+
+
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
+        <a id="get-price-button" href="javascript:ethereumPrice();" class="cl-button--ghost javascript-tracked">Latest Price: </a>
+        <input id="get-price-field" type="number" placeholder="Latest Price"></input>
+      </div>
+
+
       <MoveStuffAround/>
 
         <div>

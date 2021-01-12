@@ -1,4 +1,4 @@
- const deployedTo = '0x8E17Fa864cB4A2DF190c4C13Ba48424162dFE2e6'
+const deployedTo = '0x8E17Fa864cB4A2DF190c4C13Ba48424162dFE2e6'
 
  export default deployedTo;
 
