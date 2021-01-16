@@ -18,7 +18,7 @@ beforeEach(async () => {
     .deploy({ data: compiledFactory.bytecode })
     .send({ from: accounts[0], gas: '1000000' });
 
-  await factory.methods.createInsurancePool('100').send({
+  await factory.methods.createInsurancePool('100', 'test').send({
     from: accounts[0],
     gas: '1000000'
   });
@@ -47,7 +47,7 @@ describe('InsurancePools', () => {
 
   it('allows ppl to fund (pay premium) insurancePool and marks them as validators', async () => {
     await insurancePool.methods.fund().send({
-      value: '200',
+      value: '100',
       from: accounts[1]
     });
     const isFunder = await insurancePool.methods.validators(accounts[1]).call();

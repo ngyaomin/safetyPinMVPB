@@ -96,6 +96,8 @@ contract InsurancePool {
 
         require(!claim.validates[msg.sender]);
 
+        // we can add require([msg.sender] != claimer); >>> but for now we skip this else i will have to create and fund 5 or more accts, demo will take too long
+
         claim.validates[msg.sender] = true;
         claim.validatorCount++;
     }
