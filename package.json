@@ -13,6 +13,11 @@
   },
   "author": "",
   "license": "ISC",
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
     "@chainlink/contracts": "0.0.12",
     "@rpldy/upload-button": "^0.8.2",
@@ -24,7 +29,7 @@
     "dotenv-webpack": "^6.0.0",
     "etherscan-api": "^10.0.5",
     "express": "^4.17.1",
-    "fs": "0.0.1-security",
+    "fs": "^0.0.1-security",
     "fs-extra": "^9.0.1",
     "ganache-cli": "^6.12.1",
     "mocha": "^8.2.1",
