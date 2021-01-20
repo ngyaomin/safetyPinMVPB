@@ -5,7 +5,6 @@ import Layout from '../components/Layout';
 import { Link } from '../routes';
 import MoveStuffAround from './ticker';
 import deployedTo from '../ethereum/deployedTo';
-import ethereumPrice from './ethereumPrice';
 
 
 class InsurancePoolIndex extends Component {

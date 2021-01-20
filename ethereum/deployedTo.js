@@ -1,4 +1,4 @@
-const deployedTo = '0x4Cc694bc285935b91B2F49a69124513D42ed1B27'
+const deployedTo = '0x47670F1A670297DaF5e2E5Bc658fb80eEE2a7b68'
 
 export default deployedTo;
 
