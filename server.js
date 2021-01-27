@@ -8,9 +8,6 @@ const app = next({
   conf: {
     webpack: config => {
       config.devtool = false;
-      config.node = {
-        fs: 'empty'
-      }
 
       for (const r of config.module.rules) {
         if(r.loader === 'babel-loader') {

@@ -30,7 +30,7 @@ class InsurancePoolNew extends Component {
           from: accounts[0]
         });
 
-      Router.pushRoute('/');
+      Router.pushRoute('/poolindex');
 
       } catch (err) {
         this.setState({ errorMessage: err.message });
